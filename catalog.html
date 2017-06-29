@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<title>Catalog</title>
 		<link href="css/normalize.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
+		<link href="css/style.min.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic,latin-ext" rel="stylesheet">
 	</head>
 
@@ -12,7 +12,7 @@
 		<div class="wrapper">
 			<header class="container header">
 				<div class="container-flex">
-					<a class="logo" href="index.html">
+					<a class="logo logo-active" href="index.html">
 						<img class="logo-image" src="img/header-logo.png" width="160" height="65">
 					</a>
 
@@ -78,7 +78,7 @@
 							<input class="filter-select" id="option-1" type="checkbox" name="Слайдер">
 							<label class="filter-value checkbox" for="option-1">Слайдер</label>
 
-							<input class="filter-select" id="option-2" type="checkbox" name="Блок преимуществ">
+							<input class="filter-select" id="option-2" type="checkbox" name="Блок преимуществ" disabled>
 							<label class="filter-value checkbox" for="option-2">Блок преимуществ</label>
 
 							<input class="filter-select" id="option-3" type="checkbox" name="Новости">
@@ -91,15 +91,15 @@
 							<label class="filter-value checkbox" for="option-5">Корзина</label>
 						</fieldset>
 
-						<input class="button filter-submit" type="submit" value="Показать">
+						<input class="button button-gray filter-submit" type="submit" value="Показать">
 					</form>
 				</section>
 
 				<section class="product">
 					<div class="product-sorting filter-item">
-						<h3 class="sorting-title filter-title">Сотрировать:</h3>
+						<h3 class="sorting-title filter-title">Сортировать:</h3>
 
-						<input class="filter-select" id="sort-1" type="radio" name="sorting">
+						<input class="filter-select" id="sort-1" type="radio" name="sorting" checked>
 						<label class="sort-value" for="sort-1">По цене</label>
 
 						<input class="filter-select" id="sort-2" type="radio" name="sorting">
@@ -119,7 +119,7 @@
 							<div class="product-details">
 								<h3 class="product-title"><a class="product-link" href="#">Sedona</a></h3>
 								<p class="product-description">Информационный сайт для туристов</p>
-								<button class="button product-button" type="button">9 900 руб.</button>
+								<button class="button button-pink product-button" type="button">9 900 руб.</button>
 							</div>
 						</article>
 
@@ -129,7 +129,7 @@
 							<div class="product-details">
 								<h3 class="product-title"><a class="product-link" href="#">Pink App</a></h3>
 								<p class="product-description">Продуктовый лендинг приложения для iOS и Android</p>
-								<button class="button product-button" type="button">9 900 руб.</button>
+								<button class="button button-pink product-button" type="button">9 900 руб.</button>
 							</div>
 						</article>
 
@@ -139,7 +139,7 @@
 							<div class="product-details">
 								<h3 class="product-title"><a class="product-link" href="#">Barbershop</a></h3>
 								<p class="product-description">Сайт салона красоты. Для мужчин, да.</p>
-								<button class="button product-button" type="button">9 900 руб.</button>
+								<button class="button button-pink product-button" type="button">9 900 руб.</button>
 							</div>
 						</article>
 
@@ -149,7 +149,7 @@
 							<div class="product-details">
 								<h3 class="product-title"><a class="product-link" href="#">Mishka</a></h3>
 								<p class="product-description">Интернет-магазин вязаных игрушек</p>
-								<button class="button product-button" type="button">9 900 руб.</button>
+								<button class="button button-pink product-button" type="button">9 900 руб.</button>
 							</div>
 						</article>
 
@@ -159,7 +159,7 @@
 							<div class="product-details">
 								<h3 class="product-title"><a class="product-link" href="#">A Plus</a></h3>
 								<p class="product-description">Лендинг курсов повышения квалификации</p>
-								<button class="button product-button" type="button">9 900 руб.</button>
+								<button class="button button-pink product-button" type="button">9 900 руб.</button>
 							</div>
 						</article>
 
@@ -169,7 +169,7 @@
 							<div class="product-details">
 								<h3 class="product-title"><a class="product-link" href="#">Кваст</a></h3>
 								<p class="product-description">Промо-сайт производителя крафтового кваса</p>
-								<button class="button product-button" type="button">9 900 руб.</button>
+								<button class="button button-pink product-button" type="button">9 900 руб.</button>
 							</div>
 						</article>
 					</div>
@@ -179,19 +179,20 @@
 			<section class="page container">
 				<div class="page-list">
 					<a class="page-number page-current">1</a>
-					<a class="page-number" href="#">2</a>
-					<a class="page-number" href="#">3</a>
-					<a class="page-number page-next" href="#">Следующая</a>
+					<a class="page-number button-gray" href="#">2</a>
+					<a class="page-number button-gray" href="#">3</a>
+					<a class="page-number button-gray page-next" href="#">Следующая</a>
 				</div>
 			</section>
 
 			<section class="contacts">
+				<iframe src="https://api-maps.yandex.ua/frame/v1/-/CBQiNGAgPA" width="100%" height="100%" frameborder="0"></iframe>
 				<div class="container">
 					<div class="contacts-block">
 						<h3 class="contacts-title">Nёrds Design Studio</h3>
-						<p class="contacts-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+						<p class="contacts-address">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
 						<p class="contacts-phone">тел. +7 (812) 275-75-75</p>
-						<a class="button contacts-feedback-open" href="#">Напишите нам</a>
+						<a class="button button-pink contacts-feedback-open" href="#">Напишите нам</a>
 					</div>
 				</div>
 			</section>
@@ -200,7 +201,7 @@
 		<footer class="footer container">
 			<div class="container-flex">
 				<div class="social">
-					<a class="social-button twitter" href="#" aria-label="Твиттер">Твиттер</a>
+					<a class="social-button vk" href="#" aria-label="Вконтакте">Вконтакте</a>
 					<a class="social-button facebook" href="#" aria-label="Фейсбук">Фейсбук</a>
 					<a class="social-button instagramm" href="#" aria-label="Инстаграмм">Инстаграмм</a>
 				</div>
@@ -213,19 +214,27 @@
 		</footer>
 
 		<div class="feedback">
-			<button class="feedback-close" type="button" title="Закрыть"></button>
+			<button class="feedback-close-button" type="button" title="Закрыть" aria-label="Закрыть"></button>
+			<h2 class="feedback-title">Напишите нам</h2>
 			<form class="feedback-form" action="#" method="post">
-				<label class="feedback-name" for="name">Ваше имя</label>
-				<input class="feedback-field" type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
+				<div class="feedback-section">
+					<label class="feedback-label" for="name">Ваше имя</label>
+					<input class="feedback-field" type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
+				</div>
 
-				<label class="feedback-email" for="email">Ваш email</label>
-				<input class="feedback-field" type="email" name="email" id="email" placeholder="Для отправки ответа">
+				<div class="feedback-section">
+					<label class="feedback-label" for="email">Ваш email</label>
+					<input class="feedback-field" type="email" name="email" id="email" placeholder="Для отправки ответа">
+				</div>
 
-				<label class="feedback-text" for="text">Текст письма</label>
-				<textarea class="feedback-field" name="text" id="text" placeholder="В свободной форме"></textarea>
+				<div class="feedback-section">
+					<label class="feedback-label" for="text">Текст письма</label>
+					<textarea class="feedback-field feedback-text" name="text" id="text" placeholder="В свободной форме"></textarea>
+				</div>
 
-				<input class="feedback-send" type="submit" value="Отправить">
+				<input class="button button-pink feedback-send" type="submit" value="Отправить">
 			</form>
 		</div>
+		<script src="js/scripts.min.js"></script>
 	</body>
 </html>
