@@ -272,6 +272,7 @@ a {
 
 .slider-controls {
   position: absolute;
+  display: flex;
   bottom: 96px;
   left: 555px;
   font-size: 0;
@@ -820,7 +821,6 @@ iframe {
   padding-left: 36px;
   line-height: 22px;
   margin-bottom: 18px;
-  vertical-align: middle;
   cursor: pointer;
 }
 
